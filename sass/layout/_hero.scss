@@ -1,0 +1,52 @@
+@use '../abstracts/index' as abs;
+
+.hero {
+    margin: 10rem 0;
+
+    &__content {
+        @include abs.flex-between;
+        margin: 0 auto;
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        flex: 1;
+        color: var(--color-text-inverse);
+
+        &-highlight {
+            color: var(--color-text-primary)
+        }
+    }
+
+    &__description {
+        display: inline-block;
+        font-size: 1.6rem;
+        flex: 1;
+        color: var(--color-text-muted);
+        letter-spacing: 1px;
+    }
+
+    @include abs.respond(lg) {
+        margin: 5rem 0 !important;
+
+        &__title {
+            font-size: 3rem;
+            margin: 3rem 0 0;
+            text-align: center;
+        }
+
+        &__description {
+            font-size: 1.6rem;
+        }
+
+        &__content {
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}

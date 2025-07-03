@@ -1,0 +1,36 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin btn-style($bg-color, $text-color) {
+    background: $bg-color;
+    color: $text-color;
+    padding: 1rem 3rem;
+    min-height: 4.4rem;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+// Responsive 
+@mixin respond($breakpoint) {
+    @if $breakpoint == sm {
+        @media (max-width: 699px) {@content; }
+    } @else if $breakpoint == md {
+        @media (max-width: 768px) {@content; }
+    } @else if $breakpoint == lg {
+        @media (max-width: 992px) {@content; }
+    } @else if $breakpoint == xl {
+        @media (max-width: 1200px) {@content; }
+    }
+}

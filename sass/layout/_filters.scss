@@ -1,0 +1,44 @@
+@use '../abstracts/index' as abs;
+
+.filters {    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    &__select {
+        flex: 1 1 15rem;
+        flex: 1;
+        height: 4rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        color: var(--color-text-secondary);
+        background: var(--color-button-primary);
+        cursor: pointer;
+    }
+}
+
+.btn {
+    flex: 0 0 auto;
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    padding: 1rem 2rem;
+    height: 4rem;
+    background: var(--color-text-primary);
+    color: var(--color-button-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: var(--color-button-primary);
+        color: var(--color-text-primary);
+        box-shadow: 0 0.8rem 1.5rem rgba(255, 253, 253, 0.3);
+    }
+}

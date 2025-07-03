@@ -1,0 +1,12 @@
+@use '../abstracts/index';
+
+.logo {
+    font-size: 3.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--color-text-primary);
+
+    &__highlight {
+        color: var(--color-text-secondary)
+    }
+}

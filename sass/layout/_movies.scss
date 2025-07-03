@@ -1,0 +1,88 @@
+@use '../abstracts/index' as abs;
+
+.movies {
+    margin: 3rem auto 0;
+
+    &__card {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+        gap: 3rem;
+
+        &-body {
+            position: relative;
+            top: 0;
+            height: 30rem;
+            cursor: pointer;
+        }
+
+        &-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+            display: block;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 40%;
+            width: 100%;
+            padding: 1rem;
+            gap: 0.5rem;
+            border-radius: 0 0 6px 6px;
+            backdrop-filter: blur(10px);
+        }
+
+        &-type {
+            position: absolute;
+            top: -17rem;
+            left: 1rem;
+            font-size: 1.8rem;
+            color: var(--color-text-inverse);
+            padding: 1rem 2rem;
+            background: var(--color-text-tertiary);
+            border-radius: 6px;
+        }
+
+        &-title {
+            color: var(--color-text-inverse);
+            font-size: 2.4rem;
+            white-space: nowrap; 
+            overflow: hidden;        
+            text-overflow: ellipsis;
+            width: 100%;
+        }
+
+        &-year {
+            color: var(--color-text-primary);
+            font-size: 1.4rem;
+        }
+
+        &-imdb {
+            height: 2rem;
+        }
+
+        &-rating {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 1.5rem;
+            color: var(--color-text-secondary);
+        }
+
+        &-genres {
+            
+        }
+
+        &-genre {
+            color: var(--color-text-muted);
+            font-size: 1.3rem;
+        }
+    }
+}

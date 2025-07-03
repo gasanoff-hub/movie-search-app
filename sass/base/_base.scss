@@ -1,0 +1,13 @@
+@use '../abstracts/index';
+
+html {
+    font-size: 62.50%;
+}
+
+body {
+    background: var(--color-bg-dark);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}

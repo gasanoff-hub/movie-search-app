@@ -1,0 +1,44 @@
+@use '../abstracts/index' as abs;
+
+.footer {
+    margin: 5rem 0 0;
+    padding: 3rem 0;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+
+    &__logo {
+        @include abs.flex-center;
+        margin: 0 0 2rem;
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        list-style: none;
+        font-size: 2rem;
+
+        &-link {
+            display: inline-block;
+            color: var(--color-text-muted);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            
+            &:hover {
+                color: var(--color-text-secondary);
+            }
+        }
+    }
+
+    @include abs.respond(sm) {
+        &__logo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-bottom: 1px solid var(--color-text-muted);
+        }
+        &__nav{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
