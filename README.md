@@ -10,7 +10,7 @@ I'm interested in frontend development. I enjoy building simple, functional, and
 
 ## 🚀 Projects
 
-- [FilmOra](https://filmora-movie.netlify.app/) — Movie search website built with HTML, CSS, and JS  
+- [FilmOra](https://filmora-movie.netlify.app/) — Movie search website built with HTML, Sass/SCSS, and JS 
 
 ## 📫 Contact
 
