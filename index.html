@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" /> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet"/>
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <!-- css -->
+    <link rel="stylesheet" href="../sass/main.css"/>
+    <title>Filmora</title>
+  </head>
+  <body>
+    <!-- Header start -->
+    <header class="header">
+      <div class="header__body">
+        <!-- logo -->
+        <a class="logo" href="#logo">
+          Film<span class="logo__highlight">ora</span>
+        </a>
+
+        <!-- Header search -->
+        <div class="header__search">
+          <input
+            type="text"
+            class="header__search-input"
+            spellcheck="false"
+            placeholder="Search..."
+          />
+
+          <button class="header__search-btn">
+            <i class="icon header__search-icon fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+
+        <!-- Header language -->
+        <div class="header__language">
+          <div class="header__language-current">
+            <img
+              class="header__language-img"
+              src="../img/Flag_of_Azerbaijan.png"
+              alt="Azerbaijani"
+            />
+            Azerbaijani
+          </div>
+          <ul class="header__language-dropdown">
+            <li class="header__language-item">
+              <a href="#az" class="header__language-link">
+                <img
+                  class="header__language-img"
+                  src="../img/Flag_of_Azerbaijan.png"
+                  alt="Azerbaijani"
+                />
+                Azerbaijani
+              </a>
+            </li>
+            <li class="header__language-item">
+              <a href="#en" class="header__language-link">
+                <img
+                  class="header__language-img"
+                  src="../img/Flag_of_the_United_States.png"
+                  alt="English"
+                />
+                English
+              </a>
+            </li>
+            <li class="header__language-item">
+              <a href="#ru" class="header__language-link">
+                <img
+                  class="header__language-img"
+                  src="../img/illustration-russia-flag.avif"
+                  alt="Russia"
+                />
+                Russia
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Main section start -->
+    <main class="main">
+      <div class="container">
+        <!-- Hero section start-->
+        <section class="hero">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Discover the World of Cinema with
+              <span class="hero__title-highlight">FilmOra</span>
+            </h1>
+            <p class="hero__description">
+              At FilmOra, our mission is to help movie lovers find their
+              favorite films in the easiest and fastest way possible. Choosing
+              among thousands of genres and topics can take a lot of time, so we
+              aim to simplify and make this process accessible.
+              <br /><br />
+              We believe that everyone should be able to choose movies
+              effortlessly, and the enjoyment of cinema should never diminish.
+              That’s why FilmOra is constantly evolving, working to improve the
+              user experience, and offering a wide range of choices for movie
+              enthusiasts.
+            </p>
+          </div>
+        </section>
+        <!-- Hero section end-->
+
+        <!-- filter section start-->
+        <section class="filters">
+          <select class="filters__select">
+            <option>Select Platform</option>
+            <option>Netflix</option>
+            <option>Amazon Prime</option>
+          </select>
+
+          <select class="filters__select">
+            <option>Type of Film</option>
+            <option>Movie</option>
+            <option>Series</option>
+          </select>
+
+          <select class="filters__select">
+            <option>Genre</option>
+            <option>Adventure</option>
+            <option>Comedy</option>
+          </select>
+
+          <select class="filters__select">
+            <option>Critic Rating</option>
+            <option>High to Low</option>
+            <option>Low to High</option>
+          </select>
+
+          <select class="filters__select">
+            <option>Age Restriction</option>
+            <option>18+</option>
+            <option>13+</option>
+          </select>
+
+          <select class="filters__select">
+            <option>Year</option>
+            <option>2025</option>
+            <option>2024</option>
+            <option>2023</option>
+            <option>2022</option>
+            <option>2021</option>
+            <option>2020</option>
+            <option>2019</option>
+            <option>2018</option>
+            <option>2017</option>
+            <option>2016</option>
+            <option>2015</option>
+            <option>2014</option>
+            <option>2013</option>
+            <option>2012</option>
+            <option>2011</option>
+            <option>2010</option>
+            <option>2009</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+          </select>
+
+          <button class="btn btn-apply">Apply</button>
+        </section>
+        <!-- filter section end-->
+
+        <!-- movie section start -->
+        <section class="movies">
+          <div class="movies__card">
+            <!-- <div class="movies__card-body">
+                    <img src="../img/Esaretin-bedeli.jpg" alt="" class="movies__card-img">
+
+                    <div class="movies__card-content">
+                        <span class="movies__card-type">Film</span>
+                        <p class="movies__card-year">2001</p>
+                        <h3 class="movies__card-title">Əsaretin Bədəli</h3>
+                        <p class="movies__card-rating">
+                            <img class="movies__card-imdb" src="../img/IMDB_Logo_2016.svg.png" alt="IMDB">8.6/10
+                        </p>
+                        <div class="movies__card-genres">
+                            <span class="movies__card-genre">Drama</span>
+                            <span class="movies__card-genre">Action</span>
+                        </div>
+                    </div>
+                </div> -->
+          </div>
+        </section>
+        <!-- movie section start -->
+      </div>
+    </main>
+    <!-- Main section end -->
+
+    <!-- Footer section start -->
+    <footer class="footer">
+      <div class="container">
+        <a href="#" class="logo footer__logo">
+          Film<span class="logo__highlight">ora</span>
+        </a>
+
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Home</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Movies</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Series</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Genres</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">About Us</a>
+          </li>
+          <li class="footer__nav-item">
+            <a href="#" class="footer__nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer section start -->
+
+    <script src="../js/js1/script.js"></script>
+  </body>
+</html>
